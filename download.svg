@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471.9385000000001 423.3" width="471.9385000000001" height="423.3" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1. Sends request with base_url &amp; API Key" points="237.6378333333334,76.9 237.6378333333334,112.9 189.11550000000005,112.9 189.11550000000005,181.2 249.86433333333338,181.2 249.86433333333338,193.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2. Validates your sk-or-... key" points="197.10200000000003,205.5 187.10200000000003,205.5 187.10200000000003,217.8 197.10200000000003,217.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="3. Routes prompt to model openai/gpt-4o-mini" points="249.86433333333338,230.10000000000002 249.86433333333338,266.1 184.59650000000005,266.1 184.59650000000005,334.40000000000003 250.9758333333334,334.40000000000003 250.9758333333334,346.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4. Generates AI response" points="301.51516666666674,346.40000000000003 301.51516666666674,334.40000000000003 367.89450000000005,334.40000000000003 367.89450000000005,266.1 302.6266666666667,266.1 302.6266666666667,230.10000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="A" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="5. Returns completion text" points="302.6266666666667,193.2 302.6266666666667,181.2 363.37550000000005,181.2 363.37550000000005,112.9 314.8531666666667,112.9 314.8531666666667,76.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="A" data-to="B" data-label="1. Sends request with base_url &amp; API Key">
+  <rect x="86.61550000000004" y="119.9" width="204.76000000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="188.99550000000005" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1. Sends request with base_url &amp; API Key</text>
+</g>
+<g class="edge-label" data-from="B" data-to="B" data-label="2. Validates your sk-or-... key">
+  <rect x="36.02000000000001" y="196.50000000000006" width="153.08200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="112.56100000000002" y="211.65000000000006" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. Validates your sk-or-... key</text>
+</g>
+<g class="edge-label" data-from="B" data-to="C" data-label="3. Routes prompt to model openai/gpt-4o-mini">
+  <rect x="74.09650000000006" y="273.1" width="220.79799999999997" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="184.49550000000005" y="288.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">3. Routes prompt to model openai/gpt-4o-mini</text>
+</g>
+<g class="edge-label" data-from="C" data-to="B" data-label="4. Generates AI response">
+  <rect x="298.8945" y="273.1" width="137.04400000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="367.41650000000004" y="288.25" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4. Generates AI response</text>
+</g>
+<g class="edge-label" data-from="B" data-to="A" data-label="5. Returns completion text">
+  <rect x="295.37550000000005" y="119.9" width="135.856" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="363.30350000000004" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">5. Returns completion text</text>
+</g>
+<g class="node" data-id="A" data-label="Your Python Code in apply.ipynb" data-shape="rectangle">
+  <rect x="160.42250000000007" y="40" width="231.64599999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="276.24550000000005" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Your Python Code in apply.ipynb</text>
+</g>
+<g class="node" data-id="B" data-label="OpenRouter Server" data-shape="rectangle">
+  <rect x="197.10200000000003" y="193.2" width="158.287" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="276.24550000000005" y="211.64999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">OpenRouter Server</text>
+</g>
+<g class="node" data-id="C" data-label="GPT-4o-mini Model" data-shape="rectangle">
+  <rect x="200.43650000000005" y="346.40000000000003" width="151.618" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="276.24550000000005" y="364.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">GPT-4o-mini Model</text>
+</g>
+</svg>

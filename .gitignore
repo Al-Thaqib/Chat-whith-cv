@@ -1,0 +1,19 @@
+# Environment variables (API Keys) - DO NOT UPLOAD!
+.env
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+cursor/
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS specific
+.DS_Store
+Thumbs.db
+

@@ -16,4 +16,6 @@ venv/
 # OS specific
 .DS_Store
 Thumbs.db
-
+# Private/Scratch notebooks
+Untitled0.ipynb
+01.py
